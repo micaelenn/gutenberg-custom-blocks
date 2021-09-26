@@ -1,0 +1,19 @@
+{
+  "name": "gutenberg-custom-blocks",
+  "version": "1.0.0",
+  "description": " ",
+  "main": "src/blocks.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel src/blocks.js",
+    "watch": "parcel watch src/blocks.js",
+    "build": "parcel build src/blocks.js --no-content-hash"
+  },
+  "devDependencies": {
+    "@wordpress/babel-preset-default": "^6.3.2",
+    "@wordpress/blocks": "^11.1.0",
+    "@wordpress/element": "^4.0.1",
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.42.1"
+  }
+}
