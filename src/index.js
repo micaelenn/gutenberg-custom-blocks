@@ -1,5 +1,5 @@
 // Import Scripts
-import './blocks/index'
+import './blocks/demo/index'
 
 // Import Styles
 import './styles/index.scss'
