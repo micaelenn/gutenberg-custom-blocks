@@ -1,8 +1,6 @@
 <?php 
 /**
- * Plugin Name:       Betta Gutenberg Blocks
- * Plugin URI:        
- * Description:       Blocos Gutenberg Customizados
+ * Plugin Name:       Gutenberg Custom Blocks
  * Version:           1.0.0
  * Requires at least: 5.2
  * Requires PHP:      7.2
@@ -11,7 +9,9 @@
  * License:           GPL v2 or later
  */
 
-function betta_gutenberg_register_block() {
+require_once dirname( __FILE__ ) . '/inc/categories.php';
+
+function gcb_register_block() {
     wp_register_script(
         'gutenberg-custom-blocks-js',
         plugin_dir_url(__FILE__) . 'dist/blocks.js', 
@@ -40,4 +40,4 @@ function betta_gutenberg_register_block() {
         ]
     );
 }
-add_action( 'init', 'betta_gutenberg_register_block' );
+add_action( 'init', 'gcb_register_block' );
