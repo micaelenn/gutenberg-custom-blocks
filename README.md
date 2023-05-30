@@ -11,8 +11,7 @@ This is a plugin structure for development of custom Gutenberg blocks in WordPre
 ## Usage
 
 1. Download the zip of this repository and unzip it.
-2. Navigate to the WordPress project of choice and add the unziped boilerplate in "wp-content/plugins".
-3. In the CMS of the project, activate the plugin. It will be shown as "Gutenberg Custom Blocks".
+2. Add the unziped boilerplate in the WordPress Plugin directory and activate it through the WordPress admin.
 
 ## Getting Started
 
