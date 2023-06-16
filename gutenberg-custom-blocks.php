@@ -14,7 +14,7 @@ require_once dirname( __FILE__ ) . '/inc/categories.php';
 function gcb_register_block() {
     wp_register_script(
         'gutenberg-custom-blocks-js',
-        plugin_dir_url(__FILE__) . 'dist/blocks.js', 
+        plugin_dir_url(__FILE__) . 'dist/js/blocks.min.js', 
         [
             'wp-element',
             'wp-i18n',
@@ -27,7 +27,7 @@ function gcb_register_block() {
     
     wp_register_style(
         'gutenberg-custom-blocks-css',
-        plugin_dir_url(__FILE__) . 'dist/blocks.css',
+        plugin_dir_url(__FILE__) . 'dist/css/index.min.css',
         [],
         null
     );
