@@ -21,15 +21,15 @@ function gcb_register_block() {
             'wp-blocks',
         ],
         '',
-        null,
-        true
+        filemtime( dirname( __FILE__ ) . '/dist/js/blocks.min.js' ),
+        TRUE
     );
     
     wp_register_style(
         'gutenberg-custom-blocks-css',
         plugin_dir_url(__FILE__) . 'dist/css/index.min.css',
         [],
-        null
+        filemtime( dirname( __FILE__ ) . '/dist/css/index.min.css' )
     );
     
     register_block_type(
